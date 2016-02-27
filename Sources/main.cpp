@@ -6,10 +6,10 @@
 #include "functions.h"
 #include "myfileinfo.h"
 
+
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "Russian");
-    QCoreApplication a(argc, argv);
 
     CmdLineParser parser;
     parser << CmdLineItem("path", true, false, false, "Каталог для поиска дубликатов файлов");
@@ -80,3 +80,5 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+

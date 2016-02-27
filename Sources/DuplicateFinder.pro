@@ -1,9 +1,9 @@
 QT += core
 QT -= gui
 
-include(D:\git_projects\HelperLibrary\Sources\helperlibrary.pri)
-
 CONFIG += c++11
+
+include(helperLibrary/helperlibrary.pri)
 
 TARGET = DuplicateFinder
 CONFIG += console
