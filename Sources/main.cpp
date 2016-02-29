@@ -5,7 +5,7 @@
 #include "cmdlineparser.h"
 #include "functions.h"
 #include "myfileinfo.h"
-
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
@@ -67,8 +67,8 @@ int main(int argc, char *argv[])
             {
                 if(fileInfoList[i].compareFiles(fileInfoList[i - 1]))
                 {
-                    qDebug() << fileInfoList[i];
-                    qDebug() << fileInfoList[i - 1];
+                    qDebug() << fileInfoList[i].toString();
+                    qDebug() << fileInfoList[i - 1].toString();
                     qDebug() << "------------------------\n";
                 }
             }

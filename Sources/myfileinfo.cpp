@@ -93,3 +93,11 @@ bool MyFileInfo::compareFiles(const MyFileInfo &other)
 
     return true;
 }
+
+QString MyFileInfo::toString() const
+{
+    return QString("Размер: %1 | Хэш: %2 | Файл: %3")
+            .arg(m_fileSize)
+            .arg(m_hash)
+            .arg(m_filePath);
+}

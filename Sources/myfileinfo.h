@@ -3,6 +3,7 @@
 #include <QString>
 #include <QFile>
 #include "functions.h"
+#include <QDebug>
 
 class MyFileInfo
 {
@@ -23,12 +24,13 @@ public:
 
     friend QDebug & operator <<(QDebug &_debug, const MyFileInfo &_value);
 
+    QString toString() const;
+
 private:
     QString m_filePath;
     qint64 m_fileSize;
     bool m_isHashPresent;
     QString m_hash;
-
 };
 
 
